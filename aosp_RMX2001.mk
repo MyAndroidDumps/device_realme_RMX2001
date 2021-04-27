@@ -30,10 +30,10 @@ FLUID_BUILD_TYPE := UNOFFICIAL
 PRODUCT_PRODUCT_PROPERTIES += \
   ro.fluid.maintainer=ManshuTyagi \
   ro.fluid.cpu=Mediatek-G90T
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := fluid_RMX2001
+PRODUCT_NAME := aosp_RMX2001
 PRODUCT_DEVICE := RMX2001
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme G90T Series
