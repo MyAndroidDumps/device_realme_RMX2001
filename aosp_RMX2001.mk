@@ -21,15 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2001/device.mk)
 
-# Inherit some common FluidOS stuff.
+# Inherit some common stuff.
 TARGET_INCLUDE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
-FLUID_BUILD_TYPE := UNOFFICIAL
+BLASTER_BUILD_TYPE := OFFICIAL
 PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=ManshuTyagi \
-  ro.fluid.cpu=Mediatek-G90T
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
